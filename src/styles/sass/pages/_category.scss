@@ -1,0 +1,44 @@
+.category{
+    &__heading{
+        background-color: $black-sec;
+        color: $white;
+        padding: 2rem 0; 
+        margin-top: 5.5625rem;
+
+        h1{
+            font-size: 1.75rem;
+            line-height: 2.375rem;
+            letter-spacing: 0.125rem;
+            font-weight: $fw-bold;
+            text-align: center;
+        }
+    }
+
+    .categories{
+        padding: 4rem 1.5rem;
+    }
+
+    @media screen and (min-width: 768px){
+        
+        &__heading{
+            padding: 6.25rem 0;
+
+            h1{
+                font-size: 2.5rem;
+                line-height: 2.75rem;
+                letter-spacing: 1.43px;
+            }
+        }
+
+        .categories{
+            padding: 4rem 2.5rem;
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+
+        .categories{
+            padding: 5rem 10rem;
+        }
+    }
+}

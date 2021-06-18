@@ -1,0 +1,138 @@
+.footer{
+    margin-top: auto;   // to make the footer stick to the bottom
+    background-color: $black-sec;
+    text-align: center;
+    padding: 3.25rem 1.5rem 2.375rem 1.5rem;
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "links"
+        "text"
+        "copyrights"
+        "socialMedias";
+
+    &__logo-container{
+        grid-area: logo;
+    }
+
+    &__links{
+        grid-area: links;
+    }
+
+    &__text{
+        grid-area: text;
+        color: $gray;
+
+    }
+
+    &__copyrights{
+        grid-area: copyrights;
+        color: $gray;
+
+    }
+    
+    &__social-medias{
+        grid-area: socialMedias;
+    }
+
+    &__logo-container, &__links, &__text, &__copyrights, &__social-medias{
+        place-self: center;
+        margin-bottom: 3rem;
+    }
+
+    &__link:not(:last-child){
+        margin-bottom: 1rem;
+    }
+
+    &__link a{
+        color: $white;
+        text-transform: uppercase;
+        &:hover{
+            color: $dark-orange;
+        }
+    }
+
+    &__social-medias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        li:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 3.75rem 2.5rem 2.875rem 2.5rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "logo logo"
+            "links links"
+            "text text"
+            "copyrights socialMedias";
+        text-align: left;
+
+        &__logo-container{
+            place-self: center flex-start;
+        }
+
+        &__links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            place-self: center flex-start;
+        }
+
+        &__link{
+            &:not(:last-child){
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+        }
+
+        &__text{
+            place-self: flex-end flex-start;
+            width: 43.0625rem;
+        }
+        
+        &__copyrights{
+            place-self: flex-end flex-start;
+            margin-bottom: 0;
+        }
+
+        &__social-medias{
+            place-self: flex-end flex-end;
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+        padding: 4.6875rem 10.3125rem 3rem 10.3125rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo links"
+            "text socialMedias"
+            "copyrights .";
+        
+        &__text{
+            width: 33.75rem;
+            margin-bottom: 0;
+        }
+
+        &__links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            place-self: flex-start flex-end;
+            margin-bottom: 0;
+        }
+
+        &__link{
+            &:not(:last-child){
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+        }
+    }
+}

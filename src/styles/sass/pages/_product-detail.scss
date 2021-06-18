@@ -1,0 +1,378 @@
+.product-detail{
+    margin-top: 5.5625rem;
+
+    .detail{
+        padding: 4rem 1.5rem 3rem 1.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        picture{
+            width: 100%;
+            margin-bottom: 2rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .go-back{
+            text-transform: unset;
+            color: rgba(0,0,0,0.5);
+            font-size: 0.9375rem;
+            line-height: 1.5rem;
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            &:hover{
+                color: $dark-orange;
+            }
+        }
+
+        &__overline, &__text h2, &__text p{
+            margin-bottom: 1.5rem;
+        }
+
+        &__overline{
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            letter-spacing: 0.675rem;
+            color: $dark-orange;
+        }
+
+        &__cta{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__price{
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            letter-spacing: 1.3px;
+            font-weight: $fw-bold;
+            margin-bottom: 1.875rem;
+        }
+    }
+
+    .features, .in-the-box{
+        padding: 3rem 1.5rem;
+    
+        h2{
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .in-the-box{
+        li{
+            font-size: 1rem;
+            font-weight: $fw-medium;
+            line-height: 1.5rem;
+            color: rgba(0,0,0,0.5);
+        }
+        span{
+            color: $dark-orange;
+            margin-right: 1.5rem;
+            font-weight: $fw-bold;
+        }
+
+        li:not(:last-child){
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .suggestions{
+        padding: 3.75rem 1.5rem;
+        text-align: center;
+
+        h2{
+            margin-bottom: 4rem;
+        }
+
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            &:not(:last-child){
+                margin-bottom: 3.5rem;
+            }
+        }
+
+        img, h3{
+            margin-bottom: 2rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            letter-spacing: 1.71px;
+            font-weight: $fw-bold;
+        }
+
+        picture{
+            width: 100%;
+            margin-bottom: 2rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        picture{
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .gallery{
+        padding: 4rem 1.5rem 3rem 1.5rem;
+        
+        picture{
+            width: 100%;
+            &:not(:last-child) img{
+                margin-bottom: 1.25rem;
+            }
+
+            img{
+                width: 100%;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .detail{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 43.125rem;
+
+            picture{
+                margin-right: 4.25rem;
+                margin-bottom: 0;
+                width: 281px;
+                img{
+                    width: 100%;
+                }
+            }
+
+            &__text{
+                width: 21.25rem;
+                height: 24.375rem;
+            }
+        }
+
+        .infos-container__content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .features, .in-the-box{
+            padding: 3.75rem 2.5rem;
+
+            h2{
+                margin-bottom: 2rem;
+            }
+        }
+
+        .in-the-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 34.375rem;
+        }
+
+        .suggestions{
+            padding: 3.75rem 2.5rem;
+
+            h2{
+                margin-bottom: 3.5rem;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            li:not(:last-child){
+                margin-right: 0.625rem;
+                margin-bottom: 0;
+            }
+
+            picture{
+                width: 100%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .gallery{
+            &__content{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "first third" "second third";
+                row-gap: 1.25rem;
+                column-gap: 1.25rem;
+                height: 47.92vw;
+            }
+
+            picture{
+                height: 100%;
+                &:not(:last-child) img{
+                    margin-bottom: 0;
+                }
+
+                img{
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+
+            picture:first-child{
+                grid-area: first;
+                width: 36.07vw;
+                align-self: flex-start;
+            }
+
+            picture:nth-child(2){
+                grid-area: second;
+                width: 36.07vw;
+                height: 22.656vw;
+                align-self: flex-end;
+            }
+
+            picture:last-child{
+                grid-area: third;
+                width: 51.43vw;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .detail{
+            width: 69.375rem;
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: space-between;
+
+            picture{
+                width: 540px;
+                height: 540px;
+
+                img{
+                    width: 100%;
+                    margin-right: 7.75rem;
+                }
+            }
+
+            &__text{
+                width: 27.8125rem;
+                height: 25.4275rem;
+
+                &__overline{
+                    margin-bottom: 1rem;
+                }
+
+                h2, p{
+                    margin-bottom: 2rem;
+                }
+
+                &__price{
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        .infos-container{
+            flex-direction: row;
+            justify-content: center;
+            padding: 5rem 10rem;
+
+            &__content{
+                width: 69.375rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .features, .in-the-box{
+            padding: 0;
+        }
+
+        .features{
+            padding: 0;
+            width: 39.6875rem;
+            margin-right: 7.75rem;
+        }
+
+        .in-the-box{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .suggestions{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            ul{
+                width: 69.375rem;
+            }
+
+            picture{
+                width: 350px;
+                height: 318px;
+                margin-bottom: 2.5rem;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .gallery{
+            &__content{
+                width: 69.375rem;
+                height: 37rem;
+            }
+
+            picture{
+                height: 100%;
+                &:not(:last-child) img{
+                    margin-bottom: 0;
+                }
+
+                img{
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+
+            picture:first-child, picture:last-child, picture:nth-child(2){
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

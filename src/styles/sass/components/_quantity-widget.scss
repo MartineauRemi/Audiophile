@@ -1,0 +1,29 @@
+.quantity{
+    &__container{
+        width: 7.5rem;
+        height: 3rem;
+        text-align: center;
+        background-color: $gray;
+        font-size: 0.8125rem;
+        line-height: 1.125rem;
+        letter-spacing: 1px;
+        font-weight: $fw-bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__more-btn, &__less-btn{
+        border: none;
+        cursor: pointer;
+        padding: 0 1rem;
+        height: 100%;
+        font-size: 1rem;
+        background-color: $gray;
+
+        &:hover{
+            color: $dark-orange;
+        }
+    }
+}

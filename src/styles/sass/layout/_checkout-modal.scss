@@ -1,0 +1,111 @@
+.checkout-modal{
+    padding: 0 1.5rem;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+
+    h1{
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        font-weight: $fw-bold;
+        letter-spacing: 0.86px;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        margin-bottom: 1.5rem;
+    }
+
+    &--active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content{
+        background-color: $white;
+        width: 20.4375rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+    }
+    
+    &__recap{
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    &__articles{
+        border-radius: 0.5rem 0.5rem 0 0;
+        background-color: $gray;
+    }
+
+    &__total{
+        width: 100%;
+        padding: 1rem 0 1rem 1.5rem;
+        background-color: $black-prim;
+        color: $gray;
+        border-radius: 0.5rem;
+
+        strong{
+            color: $white;
+        }
+
+        span{
+            display: block;
+            &:first-child{
+                margin-bottom: 0.5rem;
+            }
+        }
+
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px){
+        h1{
+            font-size: 2rem;
+            line-height: 2.25rem;
+            letter-spacing: 1.14px;
+            margin-bottom: 1.5rem;
+            width: 17.75rem;
+        }
+
+        p{
+            margin-bottom: 2rem;
+        }
+
+        &__content{
+            width: 33.75rem;
+            padding: 3rem;
+        }
+
+        &__recap{
+            margin-bottom: 3rem;
+        }
+    }
+    @media screen and (min-width: 1440px){
+        &__recap{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__articles{
+            width: 15.375rem;
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+
+        // &__total{
+        //     width: 12.375rem;
+        //     border-radius: 0 0.5rem 0.5rem 0;
+        // }
+    }
+}

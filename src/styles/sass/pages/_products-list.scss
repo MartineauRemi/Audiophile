@@ -1,0 +1,17 @@
+.products-list{
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li:not(:last-child){
+        margin-bottom: 7.5rem;
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 7.5rem 2.5rem 4rem 2.5rem;
+    }
+    @media screen and (min-width: 1440px){
+        padding: 10rem 10rem 5rem 10rem;
+    }
+}
