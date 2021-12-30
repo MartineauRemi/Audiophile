@@ -2,8 +2,8 @@ import React from 'react'
 import {Link} from "react-router-dom"
 
 export default function ProductPreview({product, side}) {
-    const urlBase = "/assets/category-" + product.category
-            
+    const urlBase = "/Audiophile/assets/category-" + product.category
+    console.log(urlBase + "/mobile/image-" + product.slug + ".jpg")
     return (
         <div className={`product-preview product-preview--${side}`}>
             <picture>
@@ -15,7 +15,7 @@ export default function ProductPreview({product, side}) {
                 <div className="product-preview__overline">{product.new ? "NEW PRODUCT" : ""}</div>
                 <h2>{product.name}</h2>
                 <p>{product.description}</p>
-                <Link className="btn btn--type1" to={`/product/${product.slug}`}>See product</Link>
+                <Link className="btn btn--type1" to={`/Audiophile/product/${product.slug}`}>See product</Link>
             </div>
         </div>
     )

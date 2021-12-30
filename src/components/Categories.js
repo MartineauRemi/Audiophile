@@ -6,26 +6,26 @@ export default function Categories({setMenuActive, accessFromMenu}) {
       <section className="categories">
         <ul className="categories__list">
           <li className="categories__item" onClick={() => {if(accessFromMenu) setMenuActive(false)}}>
-            <Link to="/category/headphones">
+            <Link to="/Audiophile/category/headphones">
               <div className="categories__item-img categories__item-img--headphones"></div>
               <h3>Headphones</h3>
-              <button className="btn btn--type3">Shop <img src="/assets/shared/desktop/icon-arrow-right.svg" alt="icon-arrow-right"/></button>
+              <button className="btn btn--type3">Shop <img src="/Audiophile/assets/shared/desktop/icon-arrow-right.svg" alt="icon-arrow-right"/></button>
             </Link>
           </li>
 
           <li className="categories__item" onClick={() => {if(accessFromMenu) setMenuActive(false)}}>
-            <Link to="/category/speakers">
+            <Link to="/Audiophile/category/speakers">
               <div className="categories__item-img categories__item-img--speakers"></div>
               <h3>Speakers</h3>
-              <button className="btn btn--type3">Shop <img src="/assets/shared/desktop/icon-arrow-right.svg" alt="icon-arrow-right"/></button>
+              <button className="btn btn--type3">Shop <img src="/Audiophile/assets/shared/desktop/icon-arrow-right.svg" alt="icon-arrow-right"/></button>
             </Link>
           </li>
 
           <li className="categories__item" onClick={() => {if(accessFromMenu) setMenuActive(false)}}>
-            <Link to="/category/earphones">
+            <Link to="/Audiophile/category/earphones">
               <div className="categories__item-img categories__item-img--earphones"></div>
               <h3>Earphones</h3>
-              <button className="btn btn--type3">Shop <img src="/assets/shared/desktop/icon-arrow-right.svg" alt="icon-arrow-right"/></button>
+              <button className="btn btn--type3">Shop <img src="/Audiophile/assets/shared/desktop/icon-arrow-right.svg" alt="icon-arrow-right"/></button>
             </Link>
           </li>
         </ul>

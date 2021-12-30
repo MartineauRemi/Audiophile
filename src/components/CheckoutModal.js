@@ -20,7 +20,7 @@ export default function CheckoutModal({checkoutModalActive, closeCheckoutModal, 
                 </div>
                 <Link
                     className="btn btn--type1"
-                    to="/"
+                    to="/Audiophile"
                     onClick={() => {
                         closeCheckoutModal();
                         setShoppingCart([])}}>

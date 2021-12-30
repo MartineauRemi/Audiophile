@@ -6,13 +6,13 @@ export default function Header({menuActive, setMenuActive, shoppingCartActive, s
     return (
         <header className="header">
             <div id="hamburger" className="header__hamburger" onClick={() => onClickHamburgerIcon()}></div>
-            <Link to="/" className="header__logo-container"><div className="logo header__logo"></div></Link>
+            <Link to="/Audiophile" className="header__logo-container"><div className="logo header__logo"></div></Link>
             <nav className="header__menu">
               <ul className="header__links">
-                <li className="header__link"><Link to="/">Home</Link></li>
-                <li className="header__link"><Link to="/category/headphones">Headphones</Link></li>
-                <li className="header__link"><Link to="/category/speakers">Speakers</Link></li>
-                <li className="header__link"><Link to="/category/earphones">Earphones</Link></li>
+                <li className="header__link"><Link to="/Audiophile">Home</Link></li>
+                <li className="header__link"><Link to="/Audiophile/category/headphones">Headphones</Link></li>
+                <li className="header__link"><Link to="/Audiophile/category/speakers">Speakers</Link></li>
+                <li className="header__link"><Link to="/Audiophile/category/earphones">Earphones</Link></li>
               </ul>
             </nav>
             <button

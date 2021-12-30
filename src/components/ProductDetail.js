@@ -26,7 +26,7 @@ export default function ProductDetail({match}) {
     return (
         <div className="product-detail">
             <section className="detail">
-                <Link className="go-back" to={`/category/${product.category}`}>Go Back</Link> 
+                <Link className="go-back" to={`/Audiophile/category/${product.category}`}>Go Back</Link> 
             
                 <picture>
                     <source media="(min-width: 1440px)" srcSet={product.image.desktop} />
@@ -105,7 +105,7 @@ export default function ProductDetail({match}) {
                                     <img src={other.image.mobile} />
                                 </picture>
                                 <h3>{other.name}</h3>
-                                <Link className="btn btn--type1" to={`/product/${other.slug}`}>SEE PRODUCT</Link>
+                                <Link className="btn btn--type1" to={`/Audiophile/product/${other.slug}`}>SEE PRODUCT</Link>
                             </li>
                         )
                     })}

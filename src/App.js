@@ -22,10 +22,10 @@ function App() {
         <div className="App">
 
           {/* set up the router */}
-          <Route exact path="/" component={Homepage} />
-          <Route path="/category/:slug" component={Category} />
-          <Route path="/product/:slug" component={ProductDetail} />
-          <Route path="/checkout" component={Checkout} />
+          <Route exact path="/Audiophile" component={Homepage} />
+          <Route path="/Audiophile/category/:slug" component={Category} />
+          <Route path="/Audiophile/product/:slug" component={ProductDetail} />
+          <Route path="/Audiophile/checkout" component={Checkout} />
 
           <Menu menuActive={menuActive} setMenuActive={setMenuActive}/>
           <ShoppingCart

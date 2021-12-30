@@ -18,7 +18,7 @@ export default function Homepage() {
                 <p>
                   Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
                 </p>
-                <Link className="btn btn--type1" to="/product/xx99-mark-two-headphones">See product</Link>
+                <Link className="btn btn--type1" to="/Audiophile/product/xx99-mark-two-headphones">See product</Link>
               </div>
             </section>
 
@@ -33,7 +33,7 @@ export default function Homepage() {
                   <p>
                     Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
                   </p>
-                  <Link to="/product/zx9-speaker" className="btn btn--type4">See product</Link>
+                  <Link to="/Audiophile/product/zx9-speaker" className="btn btn--type4">See product</Link>
                 </div>
               </div>
 
@@ -41,7 +41,7 @@ export default function Homepage() {
                 <div className="top-products__item-img"></div>
                 <div className="top-products__item-text">
                   <h2>ZX7 speaker</h2>
-                  <Link className="btn btn--type2" to="/product/zx7-speaker">See product</Link>
+                  <Link className="btn btn--type2" to="/Audiophile/product/zx7-speaker">See product</Link>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@ export default function Homepage() {
                 <div className="top-products__item-img"></div>
                 <div className="top-products__item-text">
                   <h2>YX1 earphones</h2>
-                  <Link className="btn btn--type2" to="/product/yx1-earphones">See product</Link>
+                  <Link className="btn btn--type2" to="/Audiophile/product/yx1-earphones">See product</Link>
                 </div>
               </div>
             </section>

@@ -78,7 +78,7 @@ export default function Checkout() {
                             setCheckoutModalActive(true)
                     }}>
                     <div className="form">
-                        <Link className="go-back" to="/">Go Back</Link>
+                        <Link className="go-back" to="/Audiophile">Go Back</Link>
                         <h1>CHECKOUT</h1>
                         <h2>BILLING DETAILS</h2>
                         <fieldset className="checkout__billing-details">

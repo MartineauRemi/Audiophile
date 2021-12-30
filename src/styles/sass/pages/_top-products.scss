@@ -121,7 +121,7 @@
         flex-direction: column;
         align-items: center;
 
-        &:not(:first-child){
+        &__item:not(:first-child){
             .top-products__item-text{
                 padding-left: 2.5rem;
             }
